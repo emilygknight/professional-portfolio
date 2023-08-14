@@ -3,8 +3,8 @@
 }
 
 :root {
-    --blue: #bdbdc8;
-    --navy: #0d1330;
+    --blue: #928e87;
+    --navy: #060813;
     --aqua: #d0f1eb;
 }
 
@@ -18,16 +18,20 @@ body {
 }
 
 header {
-    background-image: url("purple.jpeg");
-    background-position: center;
+    background-image: url("pattern.jpg");
     background-size: contain;
+    text-align: center;
 }
 
 figure {
     height: 100px;
     display: flex;
+    justify-content: center;
 }
 
+img {
+    border-radius: 50%;
+}
 nav {
     background-color: var(--navy);
     justify-content: space-between;
@@ -52,6 +56,7 @@ h2 {
     line-height: 150%;
     text-align: center;
     color: var(--aqua);
+    background-color: var(--blue);
 }
 
 h3 {
@@ -61,7 +66,7 @@ h3 {
 article {
     text-align: center;
     background-color: var(--aqua);
-    border-radius: 20% 20% 20% 20%;
+    border-radius: 30% 30% 30% 30%;
 }
 
 article h3 {
