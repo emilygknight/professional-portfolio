@@ -32,6 +32,7 @@ figure {
 img {
     border-radius: 50%;
 }
+
 nav {
     background-color: var(--navy);
     justify-content: space-between;
