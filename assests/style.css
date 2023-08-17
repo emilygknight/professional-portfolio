@@ -9,11 +9,12 @@
     background-color: var(--navy);
     flex-direction: column;
     justify-content: center;
+    margin: 1px;
 }
 
-a {
-    background-color: var(--aqua);
-}
+
+/* I wanted the title and top of the page to grow and be 30% of the page
+the justify content set everything to sit on top of eachother in columns. */
 .title {
     flex: 1 0 30%;
     display: flex;
@@ -23,6 +24,7 @@ a {
     text-align: center;
     flex-direction: column;
 }
+
 
 .details {
     flex: 1 0 65%;
@@ -49,13 +51,13 @@ img {
     border-radius: 50%;
 }
 
-/* I added this to  */
+/* I added this to make a different kind of title styles for different title */
 .header-title {
     display: flex;
     justify-content: center;
 }
 
-/* Using a special class for the footer so I can change the background color */
+/* Using a special class for the footer so I can change the background color but keeps its properties */
 .footer-details {
     flex: 1 0 65%;
     display: flex;
@@ -64,6 +66,7 @@ img {
     background-color: var(--blue);
 }
 
+/* All the images stack on top of eachother and take up the entire width for screans smaller than 768px */
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
