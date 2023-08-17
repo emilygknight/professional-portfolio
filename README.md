@@ -10,7 +10,7 @@
 
 ## Installation
 
-- Link to application: 
+- Link to application: https://emilygknight.github.io/professional-portfolio/
 
 ## Usage 
 
