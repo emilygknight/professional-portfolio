@@ -57,7 +57,6 @@ img {
 .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 /* I added this to make a different kind of title styles for different title */
@@ -80,8 +79,5 @@ img {
 @media screen and (max-width: 768px) {
  img {
         width: 100%;
-    }
-    nav {
-        flex-direction: row;
     }
 }
