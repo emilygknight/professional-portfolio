@@ -4,6 +4,7 @@
     --aqua: #c9dee6;
 }
 
+/* Setting the main part of the page to flex and making them columns so they stack */
 .main-container {
     display: flex;
     background-color: var(--navy);
@@ -68,9 +69,7 @@ img {
 
 /* All the images stack on top of eachother and take up the entire width for screans smaller than 768px */
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
+
     img {
         width: 100%;
     }
