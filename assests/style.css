@@ -84,15 +84,14 @@ article p {
 
 
 footer {
-    display: block;
     line-height: 120%;
     font-size: 80%;
     background-color: var(--aqua);
 }
 
 footer h3 {
-background-color: var(--aqua);
-color: var(--navy);
+    background-color: var(--aqua);
+    color: var(--navy);
 }
 
 a {
@@ -100,10 +99,10 @@ a {
 }
 
 .card  {
-  border-style: solid;
-  border-width: 0px;
-  padding: 20px;
-  line-height: 40px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 20px;
+    line-height: 40px;
 }
 
 section {
