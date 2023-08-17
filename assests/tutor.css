@@ -7,12 +7,13 @@
 .main-container {
     display: flex;
     background: hotpink;
+    flex-direction: column;
 }
 
 .title {
     flex: 1 0 30%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: limegreen;
 }
@@ -26,7 +27,7 @@
 }
 
 .details img:nth-child(1){
-    flex: 1 0 100%;
+    flex: 1 0 80%;
 
 }
 
@@ -37,4 +38,5 @@
 
 img {
     width: 10%;
+    border-radius: 50%;
 }

@@ -4,121 +4,53 @@
     --aqua: #c9dee6;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--blue);
-    color: var(--navy);
+.main-container {
     display: flex;
+    background-color: var(--navy);
     flex-direction: column;
+    justify-content: center;
 }
 
-header {
-    background-image: url("./pff.jpg");
-    background-size: contain;
+.title {
+    flex: 1 0 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue);
     text-align: center;
 }
 
-figure {
-    height: 100px;
+.details {
+    flex: 1 0 65%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--navy);
+}
+
+.details img:nth-child(1){
+    flex: 1 0 80%;
+
+}
+
+.details img {
+    flex: 1 0 45%;
+    margin: 5px;
 }
 
 img {
+    display: flex;
+    width: 10%;
     border-radius: 50%;
-    margin: 10px;
 }
 
-nav {
-    background-color: var(--navy);
-    justify-content: space-between;
+.header-title {
     display: flex;
-    padding: 2%;
-    font-size: 150%;
-}
-
-nav a {
-    color: var(--aqua);
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 200%;
-    line-height: 150%;
-    background-color: var(--aqua);
-    color: var(--navy);
-}
-
-h2 {
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--navy);
-    background-color: var(--blue);
-}
-
-h3 {
-    font-size: 180%;
-    line-height: 50px;
-    text-align: center;
-}
-
-main {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-article {
-    background-color: var(--aqua);
-}
-
-article h3 {
-    padding: 1%;
-}
-
-article p {
-    font-size: 90%;
-    line-height: 150%;
-}
-
-
-footer {
-    line-height: 120%;
-    font-size: 80%;
-    background-color: var(--aqua);
-}
-
-footer h3 {
-    background-color: var(--aqua);
-    color: var(--navy);
-}
-
-a {
-    font-size: 50%;
-}
-
-.card  {
-    border-style: solid;
-    border-width: 0px;
-    padding: 20px;
-    line-height: 40px;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
+    .details,
     nav {
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      line-height: 20px;
+        flex-basis: 80%;
     }
-  }
-
-  /* I want to add the shrink and groow property but struggling
-  I want the nav bar to turn into flex row when I shrink to phone size */
+}
