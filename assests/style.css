@@ -54,6 +54,12 @@ img {
     border-radius: 50%;
 }
 
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* I added this to make a different kind of title styles for different title */
 .header-title {
     display: flex;
