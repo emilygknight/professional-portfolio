@@ -21,10 +21,12 @@
 ## Credits
 
 - https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
+- 
 
 ## License 
 
 - I really thought I added a MIT license when I created the repository but I guess I didn't, sorry about that! 
+- Dennis Itua , my tutor helped me realize a lot about my code. I was focusing on the wrong things and he clarified a lot and got me back on track!
 
 ## Features 
 
