@@ -70,10 +70,13 @@ img {
 }
 
 /* I wanted to add highlights to the circle images when you hover but i didnt have the time */
-/* All the images stack on top of eachother and take up the entire width for screans smaller than 768px */
+/* The progile image will take up the entire width for screans smaller than 768px */
 @media screen and (max-width: 768px) {
-
-    img {
+ img {
         width: 100%;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
