@@ -26,7 +26,7 @@ the justify content set everything to sit on top of eachother in columns. */
     flex-direction: column;
 }
 
-
+/* Good way to style many of the elements by assigning it to this class */
 .details {
     flex: 1 0 65%;
     display: flex;
@@ -36,12 +36,13 @@ the justify content set everything to sit on top of eachother in columns. */
     ;
 }
 
+/* This is making the first application larger */
 .details img:nth-child(1){
     flex: 1 0 80%;
 
 }
 
-/*  */
+/* Styles certain images */
 .details img {
     flex: 1 0 45%;
     margin: 5px;
