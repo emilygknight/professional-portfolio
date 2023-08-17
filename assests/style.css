@@ -11,6 +11,9 @@
     justify-content: center;
 }
 
+a {
+    background-color: var(--aqua);
+}
 .title {
     flex: 1 0 30%;
     display: flex;
@@ -18,6 +21,7 @@
     align-items: center;
     background: var(--blue);
     text-align: center;
+    flex-direction: column;
 }
 
 .details {
@@ -26,6 +30,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--navy);
+    ;
 }
 
 .details img:nth-child(1){
@@ -44,14 +49,26 @@ img {
     border-radius: 50%;
 }
 
+/* I added this to  */
 .header-title {
     display: flex;
     justify-content: center;
 }
 
+/* Using a special class for the footer so I can change the background color */
+.footer-details {
+    flex: 1 0 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--blue);
+}
+
 @media screen and (max-width: 768px) {
-    .details,
     nav {
-        flex-basis: 80%;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
     }
 }
