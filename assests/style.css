@@ -24,7 +24,6 @@ the justify content set everything to sit on top of eachother in columns. */
     background-color: var(--blue);
     text-align: center;
     flex-direction: column;
-    color: var(--aqua);
 }
 
 
