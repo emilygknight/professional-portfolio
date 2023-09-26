@@ -1,16 +1,18 @@
 :root {
-    --blue: #e2bb7d;
-    --navy: #395f49;
+    --blue: #d8c7ac;
+    --navy: #8faebc;
     --aqua: #c9dee6;
 }
-
+* {
+    margin: 5px;
+}
 /* Setting the main part of the page to flex and making them columns so they stack */
 .main-container {
     display: flex;
     background-color: var(--navy);
     flex-direction: column;
     justify-content: center;
-    margin: 1px;
+    margin-top: 20px;
 }
 
 
@@ -36,6 +38,9 @@ the justify content set everything to sit on top of eachother in columns. */
     ;
 }
 
+ul {
+ align-items: center;
+}
 /* This is making the first application larger */
 .details img:nth-child(1){
     flex: 1 0 80%;
@@ -49,7 +54,8 @@ the justify content set everything to sit on top of eachother in columns. */
 }
 
 /* This controls the sizes of most images */
-img {
+img
+{
     display: flex;
     width: 10%;
     border-radius: 50%;
@@ -58,6 +64,7 @@ img {
 .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /* I added this to make a different kind of title styles for different title */
