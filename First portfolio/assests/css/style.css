@@ -19,6 +19,7 @@
 /* I wanted the title and top of the page to grow and be 30% of the page
 the justify content set everything to sit on top of eachother in columns. */
 .title {
+    font-family: "Source+Code+Pro", serif;
     flex: 1 0 30%;
     display: flex;
     justify-content: space-between;
@@ -63,8 +64,8 @@ img
 
 .nav-links {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+
 }
 
 /* I added this to make a different kind of title styles for different title */
