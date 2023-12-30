@@ -1,0 +1,201 @@
+:root {
+    --blue: #d8c7ac;
+    --navy: #b1af9a;
+    --aqua: #c9dee6;
+}
+/* Setting the main part of the page to flex and making them columns so they stack */
+
+body {
+    min-height: 100%;
+    color: #2a2929;
+    background-color: #fff;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content.content-main {
+    margin-left: -10%;
+}
+
+.bd-bkg {
+    color: #1a1818;
+    background-color: #ece7e1;
+    margin-bottom: 0px;
+}
+
+.main-container {
+    display: flex;
+    background-color: var(--navy);
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    z-index: 500;
+}
+
+.nav-left {
+    z-index: 600;
+    width: 6%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+
+
+.left-nav-link {
+    color: #1a1818;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: 0 solid #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity .3s;
+    display: block;
+}
+
+.nav-left-item {
+    flex: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 15px;
+    transform: rotate(-90deg);
+}
+
+.nav-line {
+    width: 100px;
+    height: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 5%;
+    position: relative;
+}
+
+.section-left {
+    width: 25%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    position: fixed;
+    left: 12%;
+}
+
+.description {
+    max-width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.9em;
+    position: relative;
+}
+
+.header.swipe-up {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.section-right {
+    width: 65%;
+    float: right;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    text-align: center;
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    display: flex;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+
+}
+
+.nav {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 6%;
+}
+
+.nav-item {
+    text-align: right;
+    padding-right: 5%;
+    display: inline-block;
+    position: relative;
+}   
+
+.nav-link {
+    z-index: 100;
+    color: #1a1818;
+    text-align: left;
+    text-transform: uppercase;
+    border: 0 solid #000;
+    font-family: Kalnia, sans-serif;
+    font-size: 11vw;
+    font-weight: 300;
+    line-height: .95em;
+    text-decoration: none;
+    transition: transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out;
+    display: block;
+    position: relative;
+}
+
+.nav-link {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+.nav-link:hover {
+    transform: skewX(20deg);
+  }
+
+/* I wanted to add highlights to the circle images when you hover but i didnt have the time */
+/* The progile image will take up the entire width for screans smaller than 768px */
+@media screen and (max-width: 768px) {
+ img {
+        width: 100%;
+    }
+.wrapper {
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+.nav-left {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-left: 0;
+        position: static;
+    }
+.content.content-main {
+        margin-left: 0%;
+        padding-top: 0%;
+    }
+}
