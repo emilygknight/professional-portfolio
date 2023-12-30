@@ -27,8 +27,8 @@ body {
 .main-container {
     display: flex;
     background-color: var(--navy);
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     margin-top: 15px;
     position: relative;
     z-index: 500;
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 5%;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -84,17 +84,23 @@ body {
     padding-left: 10%;
     padding-right: 5%;
     position: relative;
+    display: flex;
 }
 
 .section-left {
-    width: 25%;
+    width: 40%;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     display: flex;
-    position: fixed;
-    left: 12%;
+}
+
+.wrapper::before {
+    content: '';
+    width: 3%; /* Adjust as needed */
+    height: 100%;
+    display: inline-block;
 }
 
 .description {
@@ -182,14 +188,16 @@ body {
         width: 100%;
     }
 .wrapper {
+        flex-direction: column;
         max-width: 100%;
         padding-left: 10%;
         padding-right: 10%;
     }
+
 .nav-left {
         width: 100%;
         height: auto;
-        flex-direction: row;
+        flex-direction: column;
         padding-bottom: 0;
         padding-left: 0;
         position: static;

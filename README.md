@@ -21,7 +21,8 @@
 ## Credits
 
 - https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
-- 
+- https://www.lauren-waller.com/ used style refrences, my main example of my envision of my portfolio
+
 
 ## License 
 
